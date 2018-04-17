@@ -28,6 +28,8 @@
 static struct input_dev *virt_ts_dev;
 static void handle_command(unsigned char command, unsigned char value);
 
+// reused code from virtual_touchscreen project. all credit should go to them, not to me. I just modified the code a little bit to make it usable via communicating with an Arduino that's connected to an capacitive 4wire touchscreen, using SPI.
+
 int err;
 
 static int __init ts_init(void)
